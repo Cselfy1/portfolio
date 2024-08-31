@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css"> <!-- Assuming you have a styles.css file -->
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goToHomepage()">Volodymyr Markhaichuk</div>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" name="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="alternative-contact">
+            <p>Or you can reach out to me directly:</p>
+            <p>Email: <a href="mailto:name@gmail.com">name@gmail.com</a></p>
+            <p>DM on X: <a href="https://x.com/cselfyvfx">@cselfyvfx</a></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Volodymyr Markhaichuk. All rights reserved.</p>
+    </footer> 
+
+    <!-- JS -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        function goToHomepage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

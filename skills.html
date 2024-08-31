@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills - Volodymyr Markhaichuk</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goToHomepage()">Volodymyr Markhaichuk</div>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">
+            <h3>Overedit Style (Formis style)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mjA6RAPsO74" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="skill-item">
+            <h3>Clean Style (Jaxed, Cselfyvfx, Sovioo, Spixy)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XFnnJepn7p8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="skill-item">
+            <h3>Overedit Style (Sovioo style)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kePr8UwDhQ8" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        function goToHomepage() {
+            window.location.href = "index.html";
+        }
+    </script> 
+
+    <footer>
+        <p>&copy; 2024 Volodymyr Markhaichuk. All rights reserved.</p>
+    </footer> 
+</body>
+</html>

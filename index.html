@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goToHomepage()">Volodymyr Markhaichuk</div>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Vova</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p><b>My name is Vova, known in the creative world as "CselfyVFX."</b> <br> I specialize in video editing using industry-leading tools like After Effects, Premiere Pro, and Vegas Pro. My edits stand out thanks to an arsenal of effects, including BCC, SAPPHIRE, NewBlueFX, UNIVERSE and more which bring a unique flair and professional polish to every project. Whether it's a over edit or a clean style edit, I blend creativity with technical precision to craft videos that leave a lasting impact.</p>
+            <div class="social-icons">
+                <a href="https://youtube.com/@cselfyvfx"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://x.com/@cselfyvfx"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="contact.html" class="btn">Contact me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Volodymyr Markhaichuk. All rights reserved.</p>
+    </footer> 
+
+    <!-- JS -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        function goToHomepage() {
+            window.location.href = "index.html";
+        }
+    </script>        
+</body>
+</html>
